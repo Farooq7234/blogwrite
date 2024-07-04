@@ -7,9 +7,9 @@ function PostCard({$id, title, featuredImage}) {
   return (
 
     <Link to={`/post/${$id}`}> 
-    TODO:
+    {/* TODO: */}
       {/* we have created an id for each post card  */}
-        <div className='w-full bg-gray-100 rounded-xl p-4'>
+        <div className='w-full bg-gray-100 rounded-xl p-4 min-h-[250px]'>
             <div className='w-full justify-center mb-4'>
                 <img src={appwriteService.getFilePreview(featuredImage)} alt={title}
                 className='rounded-xl' />
